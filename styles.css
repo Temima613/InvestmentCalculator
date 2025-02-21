@@ -1,0 +1,71 @@
+:root {
+    font-family: "Times New Roman", Times, serif;
+    --purple: purple;
+    --font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    line-height: 1;
+    font-size: 18px;
+    background-color: var(--purple);
+    border: 5px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    z-index: 10;
+    text-align: center;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+
+button:hover {
+    background-color: rebeccapurple;
+}
+
+button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-top: 80px; /* Avoid header overlap */
+}
+
+section h2 {
+    font-size: 24px;
+}
+
+section p {
+    font-size: var(--font-size);
+}
+
+section form {
+    margin-top: 20px;
+}
+
+section #result {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
