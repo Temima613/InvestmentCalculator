@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-size: var(--font-size);
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
     z-index: 10;
     text-align: center;
@@ -50,6 +50,7 @@ button:active {
 
 section {
     margin-top: 80px; /* Avoid header overlap */
+    padding: 0%;                              
 }
 
 section h2 {
@@ -62,10 +63,14 @@ section p {
 
 section form {
     margin-top: 20px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 }
 
 section #result {
+    padding-top: 0%;
+    margin-top: 0%;
     font-size: 24px;
     font-weight: bold;
-    color: green;
+    color: var(--purple);
 }
