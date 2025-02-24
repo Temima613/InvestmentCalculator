@@ -24,7 +24,6 @@
             <li>Input the year you plan to retire</li>  
         </ol>
             <p>The calculator will then calculate how much your investment will be worth by the year you retire!</p>
-            <p>Note: scroll up to see the result once you press the calculate button.</p>
     </section>
 
     <section class="container mt-5">
@@ -45,9 +44,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Calculate</button>
            </form>
-        <h3 class="mt-3" id="result"></h3>
+           <footer>
+            <h3 class="mt-3" id="result"></h3>
+            <p>Thank you for using Investment Growth Calculator</p>
 
-       
+           </footer>
     </section>
 
     <script>
@@ -66,7 +67,7 @@
                 const futureValue = initialAmount * Math.pow(1 + interestRate, yearsToGrow);
 
                 
-                document.getElementById('result').textContent = `Your investment will be worth $${futureValue.toFixed(2)} by the year ${retirementYear}.`;
+                document.getElementById('result').textContent = `Your investment will be worth $${futureValue.toFixed(0)} by the year ${retirementYear}.`;
             } else {
                 
                 document.getElementById('result').textContent = 'Please enter valid values (ensure the retirement year is in the future).';
